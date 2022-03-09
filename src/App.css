@@ -15,4 +15,6 @@
 
 .content {
   grid-area: content;
+  border: 3px solid brown;
+  padding: 1rem;
 }
