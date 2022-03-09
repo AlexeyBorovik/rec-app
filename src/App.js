@@ -5,6 +5,8 @@ import { MyPage } from "./components/MyPage/MyPage";
 import { MainPage } from "./components/MainPage/MainPage";
 import { Route, Routes } from "react-router-dom";
 
+import { Review } from "./components/Review/Review";
+
 function App() {
   return (
     <div className="app">
@@ -12,8 +14,9 @@ function App() {
       <SideBar />
       <div className="content">
         <Routes>
-          <Route path="main" element={<MainPage />}></Route>
+          <Route path="/" element={<MainPage />}></Route>
           <Route path="my-page" element={<MyPage />}></Route>
+          <Route path="review" element={<Review />}></Route>
         </Routes>
       </div>
     </div>
