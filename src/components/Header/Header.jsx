@@ -25,7 +25,7 @@ export const Header = () => {
           </DropdownButton>
       </div>
       <div>
-        <Button> Log In </Button>
+        <Button> LogIn </Button>
       </div>
     </div>
   );

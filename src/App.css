@@ -1,6 +1,10 @@
 .app {
+  background-color: #F0F2F5;
+  padding: 20px 10px;
+}
+
+.container {
   display: grid;
-  margin: auto;
   margin-left: 1rem;
 
   grid-template-areas: 
@@ -15,6 +19,9 @@
 
 .content {
   grid-area: content;
-  border: 3px solid brown;
+  border: 0 solid rgba(0,0,0,.125);
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 10%), 0 2px 4px -1px rgb(0 0 0 / 6%);
+  background-color: #fff;  
   padding: 1rem;
 }

@@ -10,14 +10,16 @@ import { Review } from "./components/Review/Review";
 function App() {
   return (
     <div className="app">
-      <Header />
-      <SideBar />
-      <div className="content">
-        <Routes>
-          <Route path="/" element={<MainPage />}></Route>
-          <Route path="my-page" element={<MyPage />}></Route>
-          <Route path="review" element={<Review />}></Route>
-        </Routes>
+      <div className="container">
+        <Header />
+        <SideBar />
+        <div className="content">
+          <Routes>
+            <Route path="/" element={<MainPage />}></Route>
+            <Route path="my-page" element={<MyPage />}></Route>
+            <Route path="review" element={<Review />}></Route>
+          </Routes>
+        </div>
       </div>
     </div>
   );
