@@ -4,30 +4,38 @@ import style from "./SideBar.module.css";
 export const SideBar = () => {
   return (
     <div className={style.sidebar}>
-      <div>
-        <NavLink
-          to={"/"}
-          className={({ isActive }) => (isActive ? style.active : style.normal)}
-        >
-          MainPage
-        </NavLink>
-      </div>
-      <div>
-        <NavLink
-          to={"/my-page"}
-          className={({ isActive }) => (isActive ? style.active : style.normal)}
-        >
-          MyPage
-        </NavLink>
-      </div>
-      <div>
-        <NavLink
-          to={"/review"}
-          className={({ isActive }) => (isActive ? style.active : style.normal)}
-        >
-          review
-        </NavLink>
-      </div>
+      <ul>
+        <li>
+          <NavLink
+            to={"/"}
+            className={({ isActive }) =>
+              isActive ? style.active : style.normal
+            }
+          >
+            <button>MainPage</button>
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to={"/my-page"}
+            className={({ isActive }) =>
+              isActive ? style.active : style.normal
+            }
+          >
+            <button>MyPage</button>
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to={"/review"}
+            className={({ isActive }) =>
+              isActive ? style.active : style.normal
+            }
+          >
+            <button>review</button>
+          </NavLink>
+        </li>
+      </ul>
     </div>
   );
 };
