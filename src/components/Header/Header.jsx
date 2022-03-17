@@ -1,7 +1,7 @@
 import { Button, ButtonGroup, Dropdown, DropdownButton, FormControl, InputGroup } from "react-bootstrap";
 import styles from "./Header.module.css";
 import searchIcon from "../../icons/search.svg"
-import DropdownItem from "react-bootstrap/esm/DropdownItem";
+import { Link } from "react-router-dom";
 
 export const Header = () => {
   return (
@@ -25,7 +25,7 @@ export const Header = () => {
           </DropdownButton>
       </div>
       <div>
-        <Button> LogIn </Button>
+        <Link to={"/login"}> <Button>LogIn</Button></Link> 
       </div>
     </div>
   );
