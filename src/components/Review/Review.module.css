@@ -1,0 +1,15 @@
+.rating {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rating img{
+    height: 100px;
+}
+
+.rating div{
+    position: absolute;
+    font-weight: bold;
+}
