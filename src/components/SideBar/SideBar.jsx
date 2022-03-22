@@ -35,6 +35,16 @@ export const SideBar = () => {
             <button>review</button>
           </NavLink>
         </li>
+        <li>
+          <NavLink
+            to={"/edit-review"}
+            className={({ isActive }) =>
+              isActive ? style.active : style.normal
+            }
+          >
+            <button>Editreview</button>
+          </NavLink>
+        </li>
       </ul>
     </div>
   );

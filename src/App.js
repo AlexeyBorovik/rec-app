@@ -7,6 +7,7 @@ import { Route, Routes } from "react-router-dom";
 import { Auth } from "./components/Auth/Auth";
 
 import { Review } from "./components/Review/Review";
+import { EditReview } from "./components/EditReview/EditReview";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             <Route path="/login" element={<Auth />}></Route>
             <Route path="my-page" element={<MyPage />}></Route>
             <Route path="review" element={<Review />}></Route>
+            <Route path="edit-review" element={<EditReview />}></Route>
           </Routes>
         </div>
       </div>
