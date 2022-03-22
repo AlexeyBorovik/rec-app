@@ -1,5 +1,6 @@
 import Button from "react-bootstrap/Button";
 import { Form } from "react-bootstrap";
+import styles from "./EditReview.module.css";
 
 export const EditReview = () => {
   const data = require("../../reviews.json");
@@ -7,7 +8,7 @@ export const EditReview = () => {
   const review = data[0];
 
   return (
-    <div>
+    <div className={styles}>
       <Form>
         <Form.Group>
           <Form.Label>Title</Form.Label>
