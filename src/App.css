@@ -1,6 +1,12 @@
-.app {
+.light {
   background-color: #F0F2F5;
   padding: 20px 10px;
+}
+
+.dark {
+  background-color: #141129;
+  padding: 20px 10px;
+  color: #FFFFFF;
 }
 
 .container {
@@ -24,4 +30,19 @@
   box-shadow: 0 4px 6px -1px rgb(0 0 0 / 10%), 0 2px 4px -1px rgb(0 0 0 / 6%);
   background-color: #fff;  
   padding: 2rem;
+}
+
+.dark .content {
+  background-color: #BB85F8;
+}
+
+.dark button {
+  background-color: #5E42CE;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.dark button:hover {
+  background-color: grey;
+  border: 1px solid #fff;
 }

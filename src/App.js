@@ -11,7 +11,7 @@ import { EditReview } from "./components/EditReview/EditReview";
 
 function App() {
   return (
-    <div className="app">
+    <div className="light" id="main">
       <div className="container">
         <Header />
         <SideBar />

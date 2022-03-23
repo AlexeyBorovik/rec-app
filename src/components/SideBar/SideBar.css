@@ -7,6 +7,10 @@
     padding: 1rem;
 }
 
+.dark .sidebar {
+    background-color: #BB85F8;
+}
+
 .sidebar ul {
     list-style: none;
     padding-left: 0;
@@ -16,11 +20,21 @@ a {
     text-decoration: none;
 }
 
-.normal button{
+.normal button {
     background-color: #F0F2F5;
     border-radius: 0.5rem;
     border: 0;
     padding: 5px 10px;
+}
+
+.dark .normal button {
+    background-color: #5E42CE;
+    color: #fff;
+}
+
+.dark .active button {
+    background-color: #5E42CE;
+    border: 1px solid #fff;
 }
 
 .active button{

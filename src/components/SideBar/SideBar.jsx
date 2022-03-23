@@ -1,15 +1,15 @@
 import { NavLink } from "react-router-dom";
-import style from "./SideBar.module.css";
+import "./SideBar.css";
 
 export const SideBar = () => {
   return (
-    <div className={style.sidebar}>
+    <div className="sidebar">
       <ul>
         <li>
           <NavLink
             to={"/"}
             className={({ isActive }) =>
-              isActive ? style.active : style.normal
+              isActive ? "active" : "normal"
             }
           >
             <button>MainPage</button>
@@ -19,7 +19,7 @@ export const SideBar = () => {
           <NavLink
             to={"/my-page"}
             className={({ isActive }) =>
-              isActive ? style.active : style.normal
+              isActive ? "active" : "normal"
             }
           >
             <button>MyPage</button>
@@ -29,7 +29,7 @@ export const SideBar = () => {
           <NavLink
             to={"/review"}
             className={({ isActive }) =>
-              isActive ? style.active : style.normal
+              isActive ? "active" : "normal"
             }
           >
             <button>review</button>
@@ -39,7 +39,7 @@ export const SideBar = () => {
           <NavLink
             to={"/edit-review"}
             className={({ isActive }) =>
-              isActive ? style.active : style.normal
+              isActive ? "active" : "normal"
             }
           >
             <button>Editreview</button>
