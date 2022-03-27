@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import { useMemo } from "react";
 import BTable from "react-bootstrap/Table";
 import { useTable, useSortBy, useFilters } from "react-table";
@@ -6,6 +7,7 @@ const DefaultColumnFilter = ({
   column: { filterValue, preFilteredRows, setFilter },
 }) => {
   const count = preFilteredRows.length;
+  const { t } = useTranslation();
 
   return (
     <input
@@ -13,7 +15,7 @@ const DefaultColumnFilter = ({
       onChange={(e) => {
         setFilter(e.target.value || undefined);
       }}
-      placeholder={`Search ${count} records...`}
+      placeholder={`${t("tab.search1")} ${count} ${t("tab.search2")}`}
     />
   );
 };

@@ -37,19 +37,14 @@ i18n
             create: "New Review",
             changeButton: "Change",
             deleteButton: "Delete",
-            tab: {
-              title: "Title",
-              tags: "Tags #",
-              group: "Group",
-            },
           },
-          mainPage: {
-            tab: {
-              title: "Title",
-              author: "Author",
-              group: "Theme",
-              tags: "Tags #",
-            },
+          tab: {
+            title: "Title",
+            author: "Author",
+            group: "Theme",
+            tags: "Tags #",
+            search1: `Search`,
+            search2: `records...`
           },
           review: {
             mark: "Rate review",
@@ -88,19 +83,14 @@ i18n
             create: "Создать обзор",
             changeButton: "Изменить",
             deleteButton: "Удалить",
-            tab: {
-              title: "Заголовок",
-              tags: "Тэги #",
-              group: "Тема",
-            },
           },
-          mainPage: {
-            tab: {
-              title: "Заголовок",
-              author: "Автор",
-              group: "Тема",
-              tags: "Тэги #",
-            },
+          tab: {
+            title: "Заголовок",
+            author: "Автор",
+            group: "Тема",
+            tags: "Тэги #",
+            search1: `Выбрать из`,
+            search2: `обзоров...`
           },
           review: {
             mark: "Оцените обзор",
