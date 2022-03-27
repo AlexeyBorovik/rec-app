@@ -2,6 +2,8 @@ import ButtonGroup from "react-bootstrap/ButtonGroup";
 import Button from "react-bootstrap/Button";
 import styles from "./Review.module.css";
 import starIcon from "../../icons/star.svg";
+import { useTranslation } from 'react-i18next';
+
 
 export const Review = () => {
   const data = require("../../reviews.json");
@@ -11,6 +13,8 @@ export const Review = () => {
   const averagedRating = (
     rating.reduce((a, b) => a + b) / rating.length
   ).toFixed(1);
+
+  const { t } = useTranslation();
 
   return (
     <div>
@@ -23,7 +27,7 @@ export const Review = () => {
         <div>{averagedRating}</div>
       </div>
       <div>
-        <div>Оцените обзор</div>
+        <div>{t('review.mark')}</div>
         <ButtonGroup>
           <Button variant="outline-primary">
             <img src={starIcon} alt=""></img>

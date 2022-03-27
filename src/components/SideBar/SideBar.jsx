@@ -1,7 +1,11 @@
 import { NavLink } from "react-router-dom";
 import "./SideBar.css";
+import { useTranslation } from 'react-i18next';
 
 export const SideBar = () => {
+
+  const { t } = useTranslation();
+
   return (
     <div className="sidebar">
       <ul>
@@ -12,7 +16,7 @@ export const SideBar = () => {
               isActive ? "active" : "normal"
             }
           >
-            <button>MainPage</button>
+            <button>{t('sideBar.main')}</button>
           </NavLink>
         </li>
         <li>
@@ -22,7 +26,7 @@ export const SideBar = () => {
               isActive ? "active" : "normal"
             }
           >
-            <button>MyPage</button>
+            <button>{t('sideBar.my')}</button>
           </NavLink>
         </li>
         <li>
@@ -32,7 +36,7 @@ export const SideBar = () => {
               isActive ? "active" : "normal"
             }
           >
-            <button>review</button>
+            <button>{t('sideBar.review')}</button>
           </NavLink>
         </li>
         <li>
@@ -42,7 +46,7 @@ export const SideBar = () => {
               isActive ? "active" : "normal"
             }
           >
-            <button>Editreview</button>
+            <button>{t('sideBar.edit')}</button>
           </NavLink>
         </li>
       </ul>
