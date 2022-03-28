@@ -25,6 +25,8 @@ a {
     border-radius: 0.5rem;
     border: 0;
     padding: 5px 10px;
+    height: 60px;
+    width: 100px;
 }
 
 .dark .normal button {
@@ -38,10 +40,11 @@ a {
 }
 
 .active button{
-    font-size: larger;
     background-color: #0d6efd;
     color: #fff;
     border-radius: 0.5rem;
     border: 0;
     padding: 5px 10px;
+    height: 60px;
+    width: 100px;
 }
