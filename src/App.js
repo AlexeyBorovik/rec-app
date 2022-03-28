@@ -12,18 +12,17 @@ import { EditReview } from "./components/EditReview/EditReview";
 import { useState } from "react";
 
 function App() {
-
-  const [ name, setName ] = useState()
+  const [name, setName] = useState();
 
   const signIn = (name) => {
-    setName(name)
-  }
+    setName(name);
+  };
   const signOut = () => {
-    setName(null)
-  }
+    setName(null);
+  };
 
   return (
-    <AuthContext.Provider value={{name, signIn, signOut}}>
+    <AuthContext.Provider value={{ name, signIn, signOut }}>
       <div className="light" id="main">
         <div className="container">
           <Header />
