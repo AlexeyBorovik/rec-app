@@ -16,7 +16,9 @@ i18n
         translation: {
           header: {
             langToggle: "Language",
+            authSpan: "You logged as: ",
             authButton: "Log In",
+            logOutBtn: "Log Out"
           },
           sideBar: {
             main: "Main page",
@@ -27,6 +29,7 @@ i18n
           auth: {
             login: {
               title: "Sign In",
+              name: "User name",
               email: "E-mail",
               password: "Password",
               button: "Log in",
@@ -61,7 +64,9 @@ i18n
         translation: {
           header: {
             langToggle: "Язык",
+            authSpan: "Вы зашли как: ",
             authButton: "Вход",
+            logOutBtn: "Выйти",
           },
           sideBar: {
             main: "Главная",
@@ -73,6 +78,7 @@ i18n
             login: {
               title: "Вход",
               email: "E-mail",
+              name: "Логин",
               password: "Пароль",
               button: "Войти",
             },

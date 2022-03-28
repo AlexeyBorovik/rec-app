@@ -11,6 +11,8 @@ import lightIcon from "../../icons/brightness-high-fill.svg";
 import darkIcon from "../../icons/moon.svg";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { useContext } from "react";
+import { AuthContext } from "../../Context";
 
 export const Header = () => {
   const themeToggle = () => {
@@ -27,6 +29,11 @@ export const Header = () => {
 
   const { t, i18n } = useTranslation();
 
+  const auth = useContext(AuthContext);
+  const logOutHandler = () => {
+    auth.signOut();
+  };
+
   return (
     <div className="header">
       <div>
@@ -38,24 +45,34 @@ export const Header = () => {
         </InputGroup>
       </div>
       <div className="toggle">
-      <img className="light-icon" src={lightIcon} alt=""></img>
+        <img className="light-icon" src={lightIcon} alt=""></img>
         <input
           type="checkbox"
           className="toggle-button"
           onClick={themeToggle}
         ></input>
-      <img className="dark-icon" src={darkIcon} alt=""></img>
+        <img className="dark-icon" src={darkIcon} alt=""></img>
       </div>
       <div>
-        <DropdownButton title={t("header.langToggle")} variant="outline-primary">
+        <DropdownButton
+          title={t("header.langToggle")}
+          variant="outline-primary"
+        >
           <Dropdown.Item onClick={switchToRus}>Русский</Dropdown.Item>
           <Dropdown.Item onClick={switchToEng}>English</Dropdown.Item>
         </DropdownButton>
       </div>
       <div>
-        <Link to={"/login"}>
-          <Button>{t("header.authButton")}</Button>
-        </Link>
+        {auth.name ? (
+          <div>
+          <span>{t("header.authSpan") + auth.name}</span> 
+          <div> <Button onClick={logOutHandler}>{t("header.logOutBtn")}</Button> </div>
+          </div>
+        ) : (
+          <Link to={"/login"}>
+            <Button>{t("header.authButton")}</Button>
+          </Link>
+        )}
       </div>
     </div>
   );
