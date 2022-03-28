@@ -15,7 +15,6 @@ i18n
       en: {
         translation: {
           header: {
-            themeToggle: "Dark/Light",
             langToggle: "Language",
             authButton: "Log In",
           },
@@ -61,7 +60,6 @@ i18n
       ru: {
         translation: {
           header: {
-            themeToggle: "Тёмный/Светлый",
             langToggle: "Язык",
             authButton: "Вход",
           },
